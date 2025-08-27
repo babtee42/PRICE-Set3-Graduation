@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   <title>Cover Template</title>
+   <style>
+     html, body {
+       height: 100%;
+       background-color: #333;
+       color: white;
+       text-align: center;
+     }
+
+     .cover-container{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #306cec);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+  margin: auto
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 
+     .cover-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+     }
+     .cover-heading {
+       font-size: 3.5rem;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="cover-container">
+     <main role="main" class="inner cover">
+      <h1 class="cover-heading">Congratulations PRICE SET 3</h1>
+       <p class="lead">This is a simple cover page template for Bootstrap.</p>
+       <p class="lead">
+         <a href="graduates.html" class="btn btn-lg btn-primary">Visit of Graduates</a>
+       </p>
+     </main>
+   </div>
+ </body>
+</html>
