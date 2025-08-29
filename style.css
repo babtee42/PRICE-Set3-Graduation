@@ -24,6 +24,11 @@
   font-weight: bold; 
 } */
 
+
+.navbar-toggler-icon {
+  outline: 2px solid var(--text-muted) /* Change 'red' to your desired color */
+}
+
 .gradient{
   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
@@ -43,17 +48,7 @@
   }
 } 
 
- /* /* @media (max-width: 768px) {
-            .container.bg-body {
-                width:0;
-            }
-        }
-/* 
- .container.bg-body{
-            /* background-color: #538ac2 !important; */
-            /* margin: 0; */
-            /* padding-right: 70px; */
-         */ */
+ 
 
 body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -103,7 +98,14 @@ body {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 2rem;
             overflow: hidden;
+            
         }
+        
+   
+
+
+
+
         
         .student-card:hover {
             transform: translateY(-5px);
