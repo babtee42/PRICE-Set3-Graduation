@@ -92,19 +92,19 @@ body {
         }
         
         .student-card {
-            background: white;
+            background: rgb(255, 255, 255);
             border-radius: 15px;
             box-shadow: 0 5px 25px rgba(62, 174, 189, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 2rem;
             overflow: hidden;
+            height: 100%;
             
         }
         
-   
-
-
-
+        .feature p{
+            font-size: 18px;
+        }
 
         
         .student-card:hover {
@@ -119,12 +119,14 @@ body {
             object-fit: cover;
             border: 4px solid var(--light-bg);
             margin-bottom: 1rem;
+            background: var(--primary-color);
         }
         
         .student-info {
             padding: 2rem;
             text-align: center;
         }
+        
         
         .student-name {
             font-size: 1.5rem;
@@ -158,7 +160,7 @@ body {
         }
         
         .certification-badge {
-            display: inline-block;
+            display: block;
             background: var(--light-bg);
             color: var(--primary-color);
             padding: 0.3rem 0.8rem;
@@ -217,5 +219,33 @@ body {
             }
         }
 
+        @media (max-width: 640px) {
+            .cover-container h1 {
+                font-size: 36px;
+            }
+        }
        
         
+
+        .vertical-marquee {
+      height: 30px; /* Adjust height as needed */
+      overflow: hidden;
+      position: relative;
+    }
+
+    .vertical-marquee-content {
+      /* display: inline-block;
+      position: absolute; */
+      animation: scroll-vertical 3s linear infinite;
+      text-align: center;
+      
+    }
+
+    @keyframes scroll-vertical {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
